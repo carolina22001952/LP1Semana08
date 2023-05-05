@@ -16,6 +16,11 @@ namespace GameUnit
             Console.WriteLine($"Move {movement} units");
         }
 
+        public override string ToString()
+        {
+            return $"{this.GetType().Name}: HP ={Health} Cost={Cost.ToString("F2")}";
+        }
+
         public Unit(int movement, int health)
         {
             this.movement = movement;

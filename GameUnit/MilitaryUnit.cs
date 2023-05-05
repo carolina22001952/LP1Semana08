@@ -19,6 +19,11 @@ namespace GameUnit
             XP++;
         }
 
+        public override string ToString()
+        {
+            return $"{base.ToString()} AP={AttackPower} XP={XP}";
+        }
+
         public MilitaryUnit(int movement, int health, int attackPower) 
             : base(movement, health)
         {
